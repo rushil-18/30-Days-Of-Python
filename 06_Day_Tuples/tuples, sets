@@ -1,0 +1,43 @@
+tupes are immutable cant change 
+() or tuple ()
+
+we can use + to join two tuples and del for deleting a tuple 
+
+sets: 
+st = set() - empty set
+st = { 1,2,3,4,5}
+print(1 in st)
+st.add(5)
+st.update([6,7,8,9])
+st.remove ()
+st.pop()
+st.clear()
+del st
+
+# union | , intersect & , difference - , ^
+st.union(st1)
+print(st|st1) - all values no duplicates 
+
+st.intersection(st1)
+print(st & st1) - common values in both 
+
+whole_numbers = {0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6, 8, 10}
+whole_numbers.difference(even_numbers) # {1, 3, 5, 7, 9}
+
+It returns the symmetric difference between two sets. It means that it returns a set that contains all 
+items from both sets, except items that are present in both sets, mathematically: (A\B) ∪ (B\A)
+# syntax
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item2', 'item3'}
+# it means (A\B)∪(B\A)
+st2.symmetric_difference(st1) # {'item1', 'item4'} : st2 ^ st1
+
+st1 = {'item1', 'item2', 'item3', 'item4'}
+st2 = {'item2', 'item3'}
+st2.issubset(st1) # True
+st1.issuperset(st2) # True
+
+even_numbers = {0, 2, 4 ,6, 8}
+odd_numbers = {1, 3, 5, 7, 9}
+even_numbers.isdisjoint(odd_numbers) # True, because no common item
